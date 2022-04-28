@@ -1,0 +1,98 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS';
+}
+
+
+/* ESTILO DOS TEXTOS */
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-top:40px;
+  margin-bottom: 20px;
+}
+
+h2, label, legend, form{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* ESTILO DO DISPLAY */
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to top,
+    rgba(184, 178, 166, 0.95),
+    rgba(226, 226, 224, 0.95)
+  ),
+  url(./imagem/bg-passinho.jpeg); 
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input , select {
+  border: 2px solid gray;
+  border-radius: 8px;
+  margin-top: 10px;
+  min-width: 25px;
+  padding: 8px 20px;
+}
+
+#texto{
+  height: 100px;
+  width: 400px;
+}
+
+#escolheOpcao{
+  display: inline;
+}
+
+/* BOTÕES */
+
+#envio input {
+  border: 2px solid rgb(46, 43, 43);
+  border-radius: 4px;
+  padding: 6px 15px;
+  margin-top: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:500px){
+  body{
+    max-width: 100vh;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  form{
+    margin: 0;
+    padding: 0;
+  }
+
+  input{
+    max-width: 250px;
+  }
+  
+}
