@@ -1,8 +1,10 @@
 var entradaTexto = document.getElementById("texto");
 var selecionandoCifra = document.getElementById("selecao");
 var adicionandoIncremento = document.getElementById("incremento");
-var varEscolhendoSaida = document.querySelector("escolheSaida");
-var btnEnvio = document.getElementById("envio");
+var varEscolhendoSaida = document.getElementById("escolhendoSaida");
+var divEnvio = document.getElementById("envio");
+var btnEnvio = document.getElementById('btn-codificar')
+var resultado = document.getElementById('resultado')
 
 function tipoDeCifra() {
   selecionandoCifra.addEventListener("click", function () {
@@ -19,11 +21,10 @@ tipoDeCifra();
 
 function escolhendoSaida() {
   varEscolhendoSaida.addEventListener("click", function () {
-    if (varEscolhendoSaida.value == "Codificar") {
-      btnEnvio.innerHTML = `<input type="submit" value="Codificar Mensagem" id="btn-codificar">`;
-    } else if (varEscolhendoSaida.value == "Decodificar") {
-      btnEnvio.innerHTML = `<input type="submit" value="Decodificar Mensagem" id="btn-decodificar">`;
+    if (varEscolhendoSaida.value == "Decodificar") {
+      btnEnvio.style.backgroundColor = 'red';
     }
   });
 }
 escolhendoSaida();
+
