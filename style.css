@@ -79,7 +79,7 @@ input , select {
   border-radius: 4px;
   padding: 6px 15px;
   margin-top: 20px;
-  max-width: 200px;
+  min-width: 200px;
 }
 
 #envio input:hover{

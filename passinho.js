@@ -1,10 +1,6 @@
 var entradaTexto = document.getElementById("texto");
 var selecionandoCifra = document.getElementById("selecao");
 var adicionandoIncremento = document.getElementById("incremento");
-var varEscolhendoSaida = document.getElementById("escolhendoSaida");
-var divEnvio = document.getElementById("envio");
-var btnEnvio = document.getElementById('btn-codificar')
-var resultado = document.getElementById('resultado')
 
 function tipoDeCifra() {
   selecionandoCifra.addEventListener("click", function () {
@@ -19,12 +15,25 @@ function tipoDeCifra() {
 }
 tipoDeCifra();
 
+// SELECIONANDO A AÇÃO
+var varEscolhendoSaida = document.getElementById("escolhendoSaida");
+var escolhendoCodificar = document.getElementById("codificar");
+var escolhendoDecodificar = document.getElementById("decodificar");
+var divBotaoEnvio = document.getElementById("envio");
+var botaoCodificar = document.getElementById("btn-codificar");
+var botaoDecodificar = document.getElementById("btn-decodificar");
+
 function escolhendoSaida() {
-  varEscolhendoSaida.addEventListener("click", function () {
-    if (varEscolhendoSaida.value == "Decodificar") {
-      btnEnvio.style.backgroundColor = 'red';
+  escolhendoDecodificar.addEventListener("click", function () {
+    if (true) {
+      divBotaoEnvio.innerHTML = `<input type="submit" value="Decodificar Mensagem" id="btn-decodificar">`;
+    }
+  });
+  escolhendoCodificar.addEventListener('click', function(){
+    if (true){
+      botaoCodificar.style.display = 'flex';
+      divBotaoEnvio.innerHTML = `<input type="submit" value="Codificar Mensagem" id="btn-codificar">`;
     }
   });
 }
 escolhendoSaida();
-
