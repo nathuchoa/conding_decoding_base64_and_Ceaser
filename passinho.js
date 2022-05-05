@@ -24,9 +24,17 @@ escolhendoDecodificar.addEventListener("click", function () {
     divBotaoEnvio.innerHTML = `<input type="submit" value="Decodificar Mensagem" id="btn-decodificar">`;
   }
 });
+
 escolhendoCodificar.addEventListener("click", function () {
   if (true) {
     divBotaoEnvio.innerHTML = `<input type="submit" value="Codificar Mensagem" id="btn-codificar">`;
   }
 });
+
+/* CAMPO DA RESPOSTA */
+
+/* CIFRA DE CESAR */
+
+/*  ((codigoASC - 65 +desloc)% 26) + 65
+    function cifraDeCesar(string){return ((codigoASC - 65 +desloc)% 26) + 65 } */
 
