@@ -19,13 +19,13 @@
 
         <div class="area-texto">
           <label for="informacao">Escreva o texto aqui: </label>
-          <input type="text" name="texto" id="texto" required>
+          <textarea id="texto" placeholder= "Sua mensagem aqui..." ></textarea required>
         </div>
 
         <div class="select">
           <label for="selecao">Selecione o tipo de código: </label>
           <select id="selecao" required>
-            <option disabled selected value>--Selecione uma opção--</option>
+            <option disabled selected value="0">--Selecione uma opção--</option>
             <option id='cifraDeCesar' value="cifraDeCesar">Cifra de César</option>
             <option id='base64' value="base64">Base64</option>
           </select>
@@ -36,8 +36,8 @@
 
         <div id="escolhendoSaida">
           <legend>Escolha o que quer fazer:</legend>
-          <input type="radio" name="opcao" value="Codificar" id="codificar" class="escolheSaida" required>Codificar
-          <input type="radio" name="opcao" value="Decodificar" id="decodificar">Decodificar
+          <input type="radio" name="opcao" value="Codificar" id="codificar" class="escolheSaida" required> Codificar
+          <input type="radio" name="opcao" value="Decodificar" id="decodificar"> Decodificar
         </div>
 
         <div id="envio">
@@ -45,8 +45,8 @@
       </form>
 
       <div class="resultado">
-        <h2>Resultado</h2>
-        <div id="resultado">
+       <label>Resultado</label>
+       <textarea id="resultado"></textarea>
         </div>
       </div>
 

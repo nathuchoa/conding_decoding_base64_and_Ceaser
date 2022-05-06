@@ -21,7 +21,7 @@ legend,
 form {
   font-size: 1rem;
   font-weight: 600;
-  margin-top: 10px;
+ 
   margin-bottom: 10px;
   text-align: left;
 }
@@ -88,6 +88,7 @@ div {
 
 input,
 select,
+textarea,
 #resultado {
   border: 2px solid gray;
   border-radius: 8px;
@@ -125,7 +126,6 @@ select,
   align-items: center;
 }
 
-
 #envio input:hover {
   background-color: rgba(88, 81, 59, 0.7);
   color: #fff;
@@ -134,7 +134,7 @@ select,
 /* RESPONSIVIDADE */
 
 @media (max-width: 700px) {
-  section {
+  .grid-container {
     display: flex;
     flex-direction: column;
   }
